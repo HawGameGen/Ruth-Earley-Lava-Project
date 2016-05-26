@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="coins" sid="9389631861916417" static="0" type="number">0</variable>
+        <event-block sid="9401487593827085">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7017083860495286" type="redplayer">
+                    <param id="0" name="Object">finishlin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="4971408074334305" type="Text">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9022898462639018">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4419472470698329" type="redplayer">
+                    <param id="0" name="Object">coines</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8564754378687483" type="coines" />
+                <action id="-10" name="Add to" sid="1421655454313612" type="System">
+                    <param id="0" name="Variable">coins</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="4869551330391938" type="coins">
+                    <param id="0" name="Text">coins</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6863436245437435">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2897432723852072" type="redplayer">
+                    <param id="0" name="Object">lava</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="321182394739306" type="redplayer" />
+                <action id="-26" name="Restart layout" sid="9297306041897869" type="System" />
+                <action id="-9" name="Set value" sid="288745125496746" type="System">
+                    <param id="0" name="Variable">coins</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

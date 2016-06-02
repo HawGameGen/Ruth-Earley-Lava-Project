@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>qe0pt9bat8se</unique-id>
+    <saved-with-version>22700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type global="1" name="player" sid="3405979146158046">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="redplayer" sid="362285464102636">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="7136209146867063">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="6828070644922698">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2749970621363089" speed="5">
+                    <frame duration="1" hotspotX="0.80597" hotspotY="0.854839" original-source="C:\Users\Game Gen Student\Documents\Ruth-Earley-Lava-Project\Files\hart.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.807683" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.8477" />
+                            <point x="1" y="1" />
+                            <point x="0.807683" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.8477" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ground" sid="3293339198405497">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1002349422192847">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8218284518602486" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Game Gen Student\Documents\Ruth-Earley-Lava-Project\gras bloc.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="9811822674016741">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="finishlin" sid="1023974180926792">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8847488147481748" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coines" sid="1980040492734924">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3203895876667618" speed="5">
+                    <frame duration="1" hotspotX="0.569444" hotspotY="0.532468" original-source="C:\Users\Game Gen Student\Documents\Ruth-Earley-Lava-Project\Files\coin.png">
+                        <collision-poly>
+                            <point x="0.152778" y="0.142857" />
+                            <point x="0.569444" y="0.012987" />
+                            <point x="0.916667" y="0.207792" />
+                            <point x="0.986111" y="0.532468" />
+                            <point x="0.847222" y="0.792208" />
+                            <point x="0.569444" y="0.987013" />
+                            <point x="0.222222" y="0.857143" />
+                            <point x="0.0138889" y="0.532468" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coins" sid="626994157456072">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="lava" sid="9611359568708421">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1556225632572591" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="2121092844901305">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4053709350655204">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Game Gen Student\Documents\Ruth-Earley-Lava-Project\gras bloc.png" />
+        </object-type>
+        <object-type name="movinplatform" sid="7398584135359688">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="87132691631402">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="79535811659431">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570216629232799" speed="5">
+                    <frame duration="1" hotspotX="0.581967" hotspotY="0.540984" original-source="C:\Users\Game Gen Student\Documents\Ruth-Earley-Lava-Project\Files\jusie.png">
+                        <collision-poly>
+                            <point x="0.0901639" y="0.0491803" />
+                            <point x="0.581967" y="0.00819672" />
+                            <point x="0.991803" y="0.131148" />
+                            <point x="0.991803" y="0.540984" />
+                            <point x="0.95082" y="0.909836" />
+                            <point x="0.581967" y="0.991803" />
+                            <point x="0.131148" y="0.991803" />
+                            <point x="0.00819672" y="0.540984" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
